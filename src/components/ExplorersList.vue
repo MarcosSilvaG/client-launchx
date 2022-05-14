@@ -1,6 +1,7 @@
 <template>
   <div class="list row">
     <div class="col-md-6">
+      <h3>Deployed in the cloud</h3>
       <h4> Explorers Inscritos </h4>
       <ul class="list-group">
         <li class="list-group-item"
@@ -22,6 +23,7 @@
           <br><label><strong>Username:</strong></label> {{ currentExplorer.username}}
           <br><label><strong>Mission:</strong></label> {{ currentExplorer.mission}}
         </div>
+        
         <router-link :to="'/explorer/' + currentExplorer.id" class="btn btn-info"> Editar</router-link>
       </div>
       <div v-else>
